@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AgenticBiz</title>
+    <style>
+      :root {
+        --bg: #0b1020;
+        --panel: #121a2f;
+        --card: #1a2440;
+        --primary: #7c9cff;
+        --primary-strong: #5b82ff;
+        --text: #edf3ff;
+        --muted: #afbddc;
+        --accent: #8ef0c8;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(135deg, var(--bg), #101827 60%, #14213d);
+        color: var(--text);
+      }
+
+      .wrap {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 24px;
+      }
+
+      .card {
+        width: min(760px, 100%);
+        background: rgba(18, 26, 47, 0.9);
+        border: 1px solid rgba(124, 156, 255, 0.25);
+        border-radius: 20px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+        padding: 48px 32px;
+        text-align: center;
+      }
+
+      .eyebrow {
+        display: inline-block;
+        padding: 8px 14px;
+        border: 1px solid rgba(142, 240, 200, 0.4);
+        border-radius: 999px;
+        color: var(--accent);
+        letter-spacing: 0.08em;
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: 700;
+      }
+
+      h1 {
+        margin: 22px 0 14px;
+        font-size: clamp(2.4rem, 5vw, 4.2rem);
+        line-height: 1.1;
+      }
+
+      p {
+        max-width: 620px;
+        margin: 0 auto;
+        color: var(--muted);
+        font-size: 1.05rem;
+        line-height: 1.7;
+      }
+
+      .actions {
+        display: flex;
+        justify-content: center;
+        gap: 14px;
+        margin-top: 30px;
+        flex-wrap: wrap;
+      }
+
+      .button {
+        display: inline-block;
+        padding: 14px 22px;
+        border-radius: 12px;
+        text-decoration: none;
+        font-weight: 700;
+        transition: transform 0.2s ease, opacity 0.2s ease;
+      }
+
+      .button:hover {
+        transform: translateY(-2px);
+      }
+
+      .button.primary {
+        background: linear-gradient(135deg, var(--primary), var(--primary-strong));
+        color: white;
+      }
+
+      .button.secondary {
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        color: var(--text);
+        background: rgba(255, 255, 255, 0.02);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <section class="card">
+        <div class="eyebrow">AI Business Platform</div>
+        <h1>AgenticBiz</h1>
+        <p>
+          Build smarter operations, automate repetitive work, and turn business systems into
+          AI-powered workflows that scale with your team.
+        </p>
+
+        <div class="actions">
+          <a class="button primary" href="#">Get Started</a>
+          <a class="button secondary" href="#">Learn More</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
